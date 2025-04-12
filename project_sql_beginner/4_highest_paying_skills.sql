@@ -19,7 +19,7 @@ GROUP BY
     skills
 ORDER BY
     average_salary DESC
-LIMIT 30; -- Want to see more than 5-10 skills for outliers
+LIMIT 15;
 
 /*
 ✅ Insights:

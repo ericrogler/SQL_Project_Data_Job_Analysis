@@ -15,7 +15,7 @@ INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 WHERE
     job_title_short = 'Data Scientist' -- Specific title
-    AND (job_location = 'Denver, CO' OR job_work_from_home = TRUE) -- Local or Remote
+    AND (job_location = 'Denver, CO' OR job_work_from_home = TRUE) -- Local or remote roles
 GROUP BY
     skills
 ORDER BY
